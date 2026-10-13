@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SheetTool</title>
+<meta name="description" content="SheetTool is a private, personal-use tool for managing Google Ads accounts through Google's official APIs.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1f2328;
+    --muted: #59636e;
+    --border: #d1d9e0;
+    --accent: #0969da;
+    --card: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117;
+      --text: #e6edf3;
+      --muted: #9198a1;
+      --border: #30363d;
+      --accent: #4493f8;
+      --card: #151b23;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+  header { border-bottom: 1px solid var(--border); }
+  header .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; justify-content: space-between; padding-top: 16px; padding-bottom: 16px; }
+  .brand { font-weight: 600; color: var(--text); text-decoration: none; }
+  nav { display: flex; gap: 20px; }
+  nav a { color: var(--muted); text-decoration: none; }
+  nav a:hover, nav a[aria-current="page"] { color: var(--text); }
+  main.wrap { padding-top: 48px; padding-bottom: 64px; }
+  h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 8px; }
+  h2 { font-size: 1.25rem; line-height: 1.3; margin: 36px 0 8px; }
+  .lead { font-size: 1.125rem; color: var(--muted); margin-top: 0; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.25em; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px; margin: 36px 0 0; }
+  footer { border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+  footer .wrap { padding-top: 16px; padding-bottom: 24px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="./">SheetTool</a>
+    <nav>
+      <a href="./" aria-current="page">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>SheetTool</h1>
+  <p class="lead">A private, personal-use tool for managing Google Ads accounts through Google's official APIs.</p>
+
+  <h2>What it does</h2>
+  <p>SheetTool connects to Google APIs, such as the Google Ads API, with the account owner's permission. It's used to:</p>
+  <ul>
+    <li>View campaign performance and reports</li>
+    <li>Create and update campaigns, ads and budgets</li>
+  </ul>
+  <p>It only works with Google Ads accounts that the signed-in Google account is allowed to manage.</p>
+
+  <h2>Who it's for</h2>
+  <p>SheetTool is used by its developer to manage their own advertising accounts. It isn't a public product, and there's no sign-up.</p>
+
+  <h2>Signing in with Google</h2>
+  <p>SheetTool uses Google's standard sign-in and consent screen. Google shows exactly what the app is asking for before you allow it, and the app never sees your Google password.</p>
+  <p>You can remove SheetTool's access at any time from your <a href="https://myaccount.google.com/permissions">Google Account permissions</a> page.</p>
+
+  <div class="card">
+    <strong>Your data</strong><br>
+    How SheetTool handles Google user data is explained in the <a href="privacy.html">Privacy Policy</a>. The rules for using the app are in the <a href="terms.html">Terms of Service</a>.
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 SheetTool · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></div>
+</footer>
+</body>
+</html>
